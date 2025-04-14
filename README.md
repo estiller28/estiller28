@@ -35,4 +35,7 @@
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
+<p align="center">
+    <img src="./github-metrics.svg">
+</p>
 
