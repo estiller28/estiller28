@@ -1,0 +1,31 @@
+name: Update README with Latest Commits
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # every day at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-commits:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch recent commits
+        uses: devjometo/latest-commits@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          readme_path: "README.md"
+          commit_message: "update: latest commits [skip ci]"
+          max_commits: 10
+          date_format: "YYYY-MM-DD"
+
+      - name: Push changes
+        run: |
+          git config --global user.name "estiller28"
+          git config --global user.email "estillerdaniel@gmail.com"
+          git add README.md
+          git commit -m "update: latest commits [skip ci]" || echo "No changes"
+          git push
