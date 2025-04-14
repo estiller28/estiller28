@@ -18,5 +18,5 @@ jobs:
         with:
           COMMIT_MSG: "chore: Fetch latest activity in README"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub's default token
-          README_STATS_TOKEN: ${{ secrets.README_STATS_TOKEN }}  # Use your custom PAT for private repos
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          README_STATS_TOKEN: ${{ secrets.README_STATS_TOKEN }}  
