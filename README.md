@@ -23,12 +23,16 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=estiller28&layout=compact&theme=radical&count_private=true" alt="Top Langs" />
 </p>
 
-
 ---
 
 ### 🌐 Connect with Me
 
 - 💼 LinkedIn: (https://www.linkedin.com/in/daniel-estiller-477394233/)
 - 📫 Email: estillerdaniel@gmail.com
+
+- ### 📊 Latest Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 
