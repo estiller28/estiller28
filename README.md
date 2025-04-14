@@ -2,11 +2,13 @@
 
 <p align="center">
     <img src="./github-metrics.svg">
-</p>
 
 ### 🌐 Connect with Me
 
 - 💼 LinkedIn: (https://www.linkedin.com/in/daniel-estiller-477394233/)
 - 📫 Email: estillerdaniel@gmail.com
+</p>
+
+
 
 
