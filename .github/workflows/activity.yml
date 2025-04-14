@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.README_STATS_TOKEN }}
           user: estiller28  
           template: classic
           base: header, activity, community, repositories, metadata
