@@ -16,6 +16,7 @@ jobs:
       - name: Update GitHub activity in README
         uses: jamesgeorge007/github-activity-readme@v0.3.0
         with:
-          COMMIT_MSG: "📈 update: latest activity in README [auto]"
+          COMMIT_MSG: "chore: Fetch latest activity in README"
         env:
-          GH_TOKEN: ${{ secrets.README_STATS_TOKEN }}  # Your PAT is stored as a secret here
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub's default token
+          README_STATS_TOKEN: ${{ secrets.README_STATS_TOKEN }}  # Use your custom PAT for private repos
