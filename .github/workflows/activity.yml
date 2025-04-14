@@ -1,0 +1,21 @@
+name: 🧠 Update GitHub Activity in README
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Runs daily at 6 AM UTC
+  workflow_dispatch:  # Allows manual trigger of the action
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Update GitHub activity in README
+        uses: jamesgeorge007/github-activity-readme@v0.3.0
+        with:
+          COMMIT_MSG: "📈 update: latest activity in README [auto]"
+        env:
+          GH_TOKEN: ${{ secrets.README_STATS_TOKEN }}  # Your PAT is stored as a secret here
